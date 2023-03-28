@@ -182,7 +182,13 @@ main {
 }
 
 .servicescard {
-    background-color: #000;
+    /* background-color: #000; */
     width: 18em;
     height: 20em;
+    padding: 3em 1em;
+    text-align: center;
+}
+
+.servicescard>img {
+    width: 5em;
 }
