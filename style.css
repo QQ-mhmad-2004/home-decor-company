@@ -199,6 +199,11 @@ main {
     background-color: #e7e7e7;
     padding: 3em 1em;
     border-radius: .3em;
+    transition: .3s;
+}
+
+.servicescard:hover {
+    box-shadow: #000 0px 14px 30px -15px;
 }
 
 .cardimg>img {
@@ -240,11 +245,14 @@ main {
 .imggg {
     width: 100%;
     height: 100%;
+    overflow: hidden;
+    border-radius: .5em;
 }
 
 .imggg>img {
     width: 100%;
     height: 100%;
+    transition: all .3s;
 }
 
 .imgprojects {
@@ -252,9 +260,9 @@ main {
     text-align: center;
     width: 89%;
     height: 10em;
+    bottom: 8%;
     opacity: 0;
-    bottom: -4em;
-    transition: 1s;
+    transition: .6s;
 }
 
 .imgprojects>.background {
@@ -263,6 +271,9 @@ main {
 }
 
 .cardprojects:hover .imgprojects {
-    opacity: .8;
-    bottom: 2.3em;
+    opacity: 1;
+}
+
+.cardprojects:hover .imggg>img {
+    transform: scale(1.5) rotate(7deg);
 }
