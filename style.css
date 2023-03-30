@@ -236,6 +236,7 @@ main {
 
 .cardprojects {
     position: relative;
+    color: #e1e0e0;
     width: 18em;
     height: 100%;
     padding: 2em 1em;
@@ -263,11 +264,20 @@ main {
     bottom: 8%;
     opacity: 0;
     transition: .6s;
+    color: #ffffff;
 }
 
 .imgprojects>.background {
+    position: relative;
     z-index: 1;
     border-radius: 1em 1em 0em 0em;
+}
+
+.imgprojects>h1,
+p {
+    position: relative;
+    z-index: 2;
+    bottom: 90%;
 }
 
 .cardprojects:hover .imgprojects {
@@ -275,5 +285,5 @@ main {
 }
 
 .cardprojects:hover .imggg>img {
-    transform: scale(1.5) rotate(7deg);
+    transform: scale(1.5) rotate(10deg);
 }
