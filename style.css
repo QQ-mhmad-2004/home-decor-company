@@ -389,3 +389,5 @@ p {
     color: #ffffff;
     border-radius: .3em;
 }
+
+@media and (max-width: 750px) {}
