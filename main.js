@@ -1,5 +1,7 @@
 let navbar = document.getElementById('navbar');
-let button = document.getElementById('buttontop')
+let button = document.getElementById('buttontop');
+let n = document.querySelector('#navbaropn');
+let nav = document.querySelector('nav');
 
 window.onscroll = function () {
     if (scrollY >= 150) {
@@ -16,4 +18,8 @@ window.onscroll = function () {
 button.onclick = function () {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
+}
+
+n.onclick = function mhmad() {
+    nav.style.height = '100%';
 }

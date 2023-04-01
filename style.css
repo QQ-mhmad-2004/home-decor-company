@@ -50,7 +50,11 @@ nav {
     color: aliceblue;
 }
 
-nav>span>a {
+.navbaropn {
+    display: none;
+}
+
+header>span>a {
     text-decoration: none;
     color: #fff;
     font-size: 1.5em;
@@ -373,7 +377,7 @@ p {
 
 .button-top {
     position: fixed;
-    z-index: 10000;
+    z-index: 100;
     right: 4em;
     bottom: 4em;
     transform: translateX(200px);
@@ -390,4 +394,39 @@ p {
     border-radius: .3em;
 }
 
-@media and (max-width: 750px) {}
+@media (max-width: 750px) {
+    .button-top {
+        z-index: 10;
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #5d6768;
+        height: 0vh;
+        z-index: 100000;
+        overflow: hidden;
+        transition: .6s;
+    }
+
+    .navbaropn {
+        display: block;
+    }
+
+    header>span {
+        position: absolute;
+        top: 1em;
+        left: 1em;
+    }
+
+    nav>ul {
+        display: block;
+        width: 100%;
+    }
+
+    nav>ul>li {
+        text-align: center;
+    }
+}
